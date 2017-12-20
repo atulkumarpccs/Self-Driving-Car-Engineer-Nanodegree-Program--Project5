@@ -1,23 +1,25 @@
-# Project: Advanced Lane Finding
+# Project: Vehicle Detection and Tracking 
 [![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
 
 Overview
 ---
-In this project, your goal is to write a software pipeline to identify the lane boundaries in a video from a front-facing camera on a car. The camera calibration images, test road images, and project videos are available in 
-<https://github.com/udacity/CarND-Advanced-Lane-Lines>
+In this project, your goal is to write a software pipeline to identify vehicles in a video from a front-facing camera on a car. The test images and project video are available in the project repository. There is an writeup template in the repository provided as a starting point for your writeup of the project.
+<https://github.com/udacity/CarND-Vehicle-Detection>
 
 ---
 
 
 The goals / steps of this project are the following:
 
-* Compute the camera calibration matrix and distortion coefficients given a set of chessboard images.
-* Apply a distortion correction to raw images.
-* Use color transforms, gradients, etc., to create a thresholded binary image.
-* Apply a perspective transform to rectify binary image ("birds-eye view").
-* Detect lane pixels and fit to find the lane boundary.
-* Determine the curvature of the lane and vehicle position with respect to center.
-* Warp the detected lane boundaries back onto the original image.
+1. Perform a Histogram of Oriented Gradients (HOG) feature extraction on a labeled training set of images and train a classifier Linear SVM classifier.
+2.Optionally, you can also apply a color transform and append binned color features, as well as histograms of color, to your HOG feature vector
+3 Note: for those first two steps don't forget to normalize your features and randomize a selection for training and testing.
+
+4. Implement a sliding-window technique and use your trained classifier to search for vehicles in images.
+5. Run your pipeline on a video stream (start with the test_video.mp4 and later implement on full project_video.mp4) and create a heat map of recurring detections frame by frame to reject outliers and follow detected vehicles.
+
+6 Estimate a bounding box for vehicles detected.
+
 * Output visual display of the lane boundaries and numerical estimation of lane curvature and vehicle position.
 
  ## (Image References)
