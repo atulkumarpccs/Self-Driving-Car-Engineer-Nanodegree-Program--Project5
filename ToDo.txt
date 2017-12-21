@@ -1,0 +1,3 @@
+Cross cheack befor submitting all the things.
+Run the code base onec again.
+Add all the document need for the submission in the submiitef folder.
