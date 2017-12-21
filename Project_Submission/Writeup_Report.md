@@ -52,14 +52,14 @@ def get_dataset(rootdir):
 
 Vehicle and Non-vehicle images:
 
-<img src="output_images/sample_dataset.png">
+<img src="/output_images/sample_dataset.png">
 
 There are various feature extraction techniques has been used to train the classifier to detect the cars efficiently.
 
 
 ## Spatial Binning
 
-<img src="output_images/spatial_binning.jpg">
+<img src="/output_images/spatial_binning.jpg">
 
 While it could be cumbersome to include three color channels of a full resolution image, you can perform spatial binning on an image and still retain enough information to help in finding vehicles.
 
@@ -78,7 +78,7 @@ If we had to, we could differentiate the two images based on the differences in 
 
 Differentiating images by the intensity and range of color they contain can be helpful for looking at car vs non-car images.
 
-<img src="output_images/histogram.jpg">
+<img src="/output_images/histogram.jpg">
 
 
 ## Histogram of oriented gradients(HOG)
@@ -89,7 +89,7 @@ The histogram of oriented gradients (HOG) is a feature descriptor used in comput
 
 In the HOG feature descriptor, the distribution ( histograms ) of directions of gradients ( oriented gradients ) are used as features. Gradients ( x and y derivatives ) of an image are useful because the magnitude of gradients is large around edges and corners ( regions of abrupt intensity changes ) and we know that edges and corners pack in a lot more information about object shape than flat regions.
 
-<img src="output_images/hog.png">
+<img src="/output_images/hog.png">
 
 
 Next one is to choose the right parameters to train the classifier to predict the image, I have defined the parameter class to define these parameters.
@@ -115,7 +115,7 @@ Parameters(
 Feature extraction varies with parameters. I have done feature extraction with various parameter combination and I found the above parameter combination is best suited for the feature extraction.
 
 
-<img src="output_images/feature_extraction.png">
+<img src="/output_images/feature_extraction.png">
 
 ### Classifier
 
@@ -187,7 +187,7 @@ Test Accuracy of SVC =  0.9911
 
 In the context of computer vision (and as the name suggests), a sliding window is rectangular region of fixed width and height that “slides” across an image. For each of these windows, we would normally take the window region and apply an image classifier to determine if the window has an object that interests us.
 
-<img src="output_images/sliding_window.png">
+<img src="/output_images/sliding_window.png">
 
 Here are three test images and we can see all the bounding boxes for where my classifier reported positive detections. You can see that overlapping detections exist for each of the two vehicles, and in two of the frames, there is a false positive detection on the middle of the road. In this exercise, you'll build a heat-map from these detections in order to combine overlapping detections and remove false positives.
 
@@ -233,7 +233,7 @@ def heat_threshold(img, threshold, svc, X_scaler, windows_list, params):
     
 ```
 
-<img src="output_images/heat1.png">
+<img src="/output_images/heat1.png">
 
 
 The hog sub-sampling is more efficient method for doing the sliding window approach. The code only has to extract hog features once and then can be sub-sampled to get all of its overlaying windows. Each window is defined by a scaling factor where a scale of 1 would result in a window that's 8 x 8 cells then the overlap of each window is in terms of the cell distance. This means that a cells_per_step = 2 would result in a search window overlap of 75%. Its possible to run this same function multiple times for different scale values to generate multiple-scaled search windows. The hog sub-sampling helps to reduce calculation time for finding HOG features and thus provided higher throughput rate.
@@ -242,7 +242,7 @@ I have decided to choose stating position of the window search from 350px to 656
 
 As explained above, same heatmap and threshold with limit 1 techniqueue is used to combine overlapping detections and remove false positives.
 
-<img src="output_images/hog_sub_sampling_result.png">
+<img src="/output_images/hog_sub_sampling_result.png">
 
 Here is  the code for finding cars using hog sub-sampling window search:
 
