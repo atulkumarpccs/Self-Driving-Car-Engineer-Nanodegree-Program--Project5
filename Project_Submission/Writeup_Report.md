@@ -345,7 +345,7 @@ def pipeline(img):
 
 ### Discussion
 
-1.I would try to extend on the real camera calibaration & then tarin in future to make it real issues during projects & would explore other techinques for better result & complex use case. 
+1. Complete me 
 
 
 ### Optional challenge
