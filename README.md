@@ -42,7 +42,7 @@ pip install tensorflow-gpu
 
 5. Go to the project_submission directory
 
-6. Run >>jupyter notebook P4.ipynb
+6. Run >>jupyter notebook project.ipynb
 
 7. Run shell one by one 
 
@@ -83,5 +83,21 @@ Complete the Setup instructions.
  2.Some of package for python are installed manually.
  
  3.AWS setup is not working as per support project so done locally.
+ ```
+ 
+ ### From Git to Github :
+ 
+  ```sh
+ 1.``git clone`` Self-Driving-Car-Engineer-Nanodegree-Program--Project5 .
+ 
+ 2.Make changes and run the command ``git status`` for changed in repository
+ 
+ 3.Add all files in one command ``git add .``
+ 
+ 4.Commit the code base by ``git commit -m "your commnet"
+ 
+ 5.Check the github repository if you done change on github ``git pull origin master``
+ 
+ 6.Push your code by ``git push origin master``
  ```
  
