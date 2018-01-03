@@ -348,12 +348,16 @@ def pipeline(img):
 
 ### Discussion
 
-1. Complete me 
+1. The code is detecting the vehicle accurately but sometimes it detects the road divider vehicle also. There is need to improve this by trainining my classifer with huge dataset and to use Deep Learning approach as per 
+<https://towardsdatascience.com/vehicle-detection-and-tracking-44b851d70508>.
+
+2. This project is depend on Spatial and Hog Features. It's not giving all the time better result as it detected non-vehicle images as vehicle. I would like to use more feature extraction technique to increase the accuracy.
 
 
 ### Optional challenge
 
-Please find [link for the video result](./project_video.mp4)
+Please find [link for the video result]
+<https://github.com/atulkumarpccs/Self-Driving-Car-Engineer-Nanodegree-Program--Project5>
 
 
 
