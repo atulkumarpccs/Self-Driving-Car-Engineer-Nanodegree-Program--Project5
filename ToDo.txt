@@ -1,3 +1,0 @@
-Cross cheack befor submitting all the things.
-Run the code base once again.
-Add all the document need for the submission in the submitted folder.
