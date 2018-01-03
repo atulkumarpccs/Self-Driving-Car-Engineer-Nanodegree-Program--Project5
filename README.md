@@ -10,13 +10,13 @@ In this project, your goal is to write a software pipeline to identify vehicles 
 <https://github.com/udacity/CarND-Vehicle-Detection>
 
 ## Submission Requirment :
- 1.Writeup
+ 1. Writeup
  
- 2.Code (or a Jupyter notebook)
+ 2. Code (or a Jupyter notebook)
  
- 3.Example output images. 
+ 3. Example output images. 
  
- 4.Output Video.
+ 4. Output Video.
  
  ### Acceptance Criteria :
  <https://review.udacity.com/#!/rubrics/322/view>
@@ -38,15 +38,15 @@ pip install tensorflow-gpu
 3. Open the Anaconda Command Prompt.
    example C:\Users\Atul\Anaconda3>
   
-4. Run command >>activate carnd-term1
+4. Run command >> activate carnd-term1
 
 5. Go to the project_submission directory
 
-6. Run >>jupyter notebook project.ipynb
+6. Run >> jupyter notebook project.ipynb
 
-7. Run shell one by one 
+7. Run ipython by using downward tab.
 
-8. Output video take time wait :)
+8. Output video take time wait ..
 
 ```
 
@@ -77,6 +77,7 @@ Complete the Setup instructions.
  ```  
    
  ### Known Issues :
+ 
  ```sh
  1.Set up is not done for personal Linux environment.
  
@@ -87,17 +88,18 @@ Complete the Setup instructions.
  
  ### From Git to Github :
  
-  ```sh
- 1.``git clone`` Self-Driving-Car-Engineer-Nanodegree-Program--Project5 .
  
- 2.Make changes and run the command ``git status`` for changed in repository
+ 1. Cloning the repository by using command ```git clone Self-Driving-Car-Engineer-Nanodegree-Program--Project5 ```.
  
- 3.Add all files in one command ``git add .``
+ 2. Make changes and run the command ```git status``` for changed in local repository.
  
- 4.Commit the code base by ``git commit -m "your commnet"
+ 3. Add all files in one command  ```git add .```
  
- 5.Check the github repository if you done change on github ``git pull origin master``
+ 4. Commit the code base by ```git commit -m "your comment" ```
  
- 6.Push your code by ``git push origin master``
- ```
+ 5. Check the github repository if you done change on github ```git pull origin master```
+ 
+ 6. Push your code by ```git push origin master```
+ 
+ 
  
