@@ -95,7 +95,7 @@ Complete the Setup instructions.
  
  3. Add all files in one command  ```git add .```
  
- 4. Commit the code base by ```git commit -m "your commnet" ```
+ 4. Commit the code base by ```git commit -m "your comment" ```
  
  5. Check the github repository if you done change on github ```git pull origin master```
  
